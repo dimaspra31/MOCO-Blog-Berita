@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MotoGp</title>
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <div class="sticky top-0 z-50 flex justify-between px-4 py-5 bg-white shadow-sm lg:px-14">
+      <div class="flex w-full gap-10">
+        <!-- Logo dan Menu -->
+        <div class="flex items-center justify-between w-full lg:w-auto">
+          <!-- Logo -->
+          <a href="index.html">
+            <div class="flex items-center gap-2">
+              <img src="./img/Logo.png" alt="Logo" class="w-8 lg:w-10" />
+              <p class="text-lg font-bold lg:text-xl">Moco</p>
+            </div>
+          </a>
+          <button class="text-2xl lg:hidden text-primary focus:outline-none" id="menu-toggle">☰</button>
+        </div>
+
+        <!-- Menu Navigasi -->
+        <div id="menu" class="flex-col hidden w-full mt-5 lg:flex lg:flex-row lg:items-center lg:gap-10 lg:w-auto lg:mt-0">
+          <ul class="flex flex-col items-start w-full gap-4 text-base font-medium lg:flex-row lg:items-center lg:w-auto">
+            <li><a href="index.html" class="hover:text-primary">Beranda</a></li>
+            <li><a href="gayahidup.html" class="hover:text-primary">Gaya Hidup</a></li>
+            <li><a href="olahraga.html" class="hover:text-primary">Olahraga</a></li>
+            <li><a href="kesehatan.html" class="hover:text-primary">Kesehatan</a></li>
+            <li><a href="politik.html" class="hover:text-primary">Politik</a></li>
+            <li><a href="pariwisata.html" class="hover:text-primary">Pariwisata</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Search dan Login -->
+      <div class="relative items-center hidden w-full gap-2 mt-4 lg:flex lg:mt-0 lg:w-auto">
+        <div class="relative w-full lg:w-auto">
+          <input type="text" placeholder="Cari berita..." class="w-full px-4 py-2 pl-8 text-sm font-normal border rounded-full border-slate-300 lg:w-auto focus:outline-none focus:ring-primary focus:border-primary" id="searchInput" />
+          <!-- Icon Search -->
+          <span class="absolute inset-y-0 flex items-center left-3 text-slate-400">
+            <img src="/src/img/search.png" alt="search" class="w-4" />
+          </span>
+        </div>
+        <a href="login.html" class="px-8 py-2 text-sm font-semibold text-white rounded-full bg-primary h-fit lg:text-base"> Masuk </a>
+      </div>
+    </div>
+
+    <!-- Menu Dropdown untuk Mobile -->
+    <div id="dropdown-menu" class="absolute top-0 left-0 z-40 flex flex-col items-start hidden w-full h-screen gap-4 px-8 py-12 text-lg font-semibold bg-white shadow-md">
+      <a href="index.html" class="hover:text-primary">Beranda</a>
+      <a href="gayahidup.html" class="hover:text-primary">Gaya Hidup</a>
+      <a href="olahraga.html" class="hover:text-primary">Olahraga</a>
+      <a href="kesehatan.html" class="hover:text-primary">Kesehatan</a>
+      <a href="politik.html" class="hover:text-primary">Politik</a>
+      <a href="pariwisata.html" class="hover:text-primary">Pariwisata</a>
+      <a href="login.html" class="hover:text-primary">Masuk</a>
+    </div>
+
+    <!-- Detail Berita -->
+    <div class="flex flex-col px-4 mt-10 lg:px-14">
+      <div class="mb-6 text-xl font-bold text-center lg:text-2xl lg:text-left">
+        <p>MotoGP 2025 Akan Diadakan Di Sirkuit Mandalika</p>
+      </div>
+      <div class="flex flex-col w-full gap-10 lg:flex-row">
+        <!-- Berita Utama -->
+        <div class="lg:w-8/12">
+          <img src="/src/img/Berita-Motor.png" alt="MotoGP" class="object-cover w-full max-h-96 rounded-xl" />
+          <p class="mt-6 text-lg font-bold lg:text-xl">MotoGP 2025 Akan Diadakan di Sirkuit Mandalika: Kebanggaan Indonesia di Mata Dunia</p>
+          <p class="mt-6 text-base leading-relaxed text-justify lg:text-xl">
+            Indonesia kembali menjadi tuan rumah ajang balap motor paling bergengsi, MotoGP, di tahun 2025. Sirkuit Mandalika, yang terletak di Lombok, Nusa Tenggara Barat, akan menjadi panggung utama bagi para pembalap dunia untuk
+            menunjukkan kemampuan mereka. Kabar ini tidak hanya membanggakan bagi penggemar balap di tanah air, tetapi juga memberikan dampak positif bagi ekonomi dan pariwisata lokal.
+            <br /><br />
+            Sirkuit Mandalika: Daya Tarik Utama Sirkuit Mandalika telah dikenal sebagai salah satu sirkuit paling menarik di dunia karena lokasinya yang unik. Terletak di kawasan dengan pemandangan pantai yang memukau, sirkuit ini
+            menawarkan pengalaman balap yang berbeda. Dengan panjang lintasan 4,31 km dan 17 tikungan menantang, Mandalika telah mendapatkan pujian dari pembalap dan tim MotoGP sejak pertama kali menjadi tuan rumah pada 2021.
+          </p>
+        </div>
+        <!-- Berita Terbaru -->
+        <div class="flex flex-col gap-10 lg:w-4/12">
+          <div class="sticky z-40 top-24">
+            <p class="mb-8 text-xl font-bold lg:text-2xl">Berita Terbaru Lainnya</p>
+            <!-- Berita Card -->
+            <div class="flex flex-col gap-5">
+              <a href="detail-MotoGp.html">
+                <div class="flex gap-3 p-3 border border-slate-300 hover:border-primary rounded-xl">
+                  <div class="absolute px-5 py-1 mt-2 ml-2 text-xs font-normal text-white rounded-full bg-primary w-fit">Olahraga</div>
+                  <div class="flex flex-col gap-3 lg:flex-row">
+                    <img src="img/Berita-Motor.png" alt="" class="object-cover max-h-36 rounded-xl" />
+                    <div class="">
+                      <p class="text-sm font-bold lg:text-base">MotoGP 2025 Akan Diadakan Di Sirkuit Mandalika</p>
+                      <p class="mt-2 text-sm text-slate-400 lg:text-xs">Sekitar 59 persen pencari kerja mengaku pernah di-ghosting oleh perekrut dan tidak mendapat respons...</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="detail-MotoGp.html">
+                <div class="flex gap-3 p-3 border border-slate-300 hover:border-primary rounded-xl">
+                  <div class="absolute px-5 py-1 mt-2 ml-2 text-xs font-normal text-white rounded-full bg-primary w-fit">Olahraga</div>
+                  <div class="flex flex-col gap-3 lg:flex-row">
+                    <img src="img/Berita-Motor.png" alt="" class="object-cover max-h-36 rounded-xl" />
+                    <div class="">
+                      <p class="text-sm font-bold lg:text-base">MotoGP 2025 Akan Diadakan Di Sirkuit Mandalika</p>
+                      <p class="mt-2 text-sm text-slate-400 lg:text-xs">Sekitar 59 persen pencari kerja mengaku pernah di-ghosting oleh perekrut dan tidak mendapat respons...</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="detail-MotoGp.html">
+                <div class="flex gap-3 p-3 border border-slate-300 hover:border-primary rounded-xl">
+                  <div class="absolute px-5 py-1 mt-2 ml-2 text-xs font-normal text-white rounded-full bg-primary w-fit">Olahraga</div>
+                  <div class="flex flex-col gap-3 lg:flex-row">
+                    <img src="img/Berita-Motor.png" alt="" class="object-cover max-h-36 rounded-xl" />
+                    <div class="">
+                      <p class="text-sm font-bold lg:text-base">MotoGP 2025 Akan Diadakan Di Sirkuit Mandalika</p>
+                      <p class="mt-2 text-sm text-slate-400 lg:text-xs">Sekitar 59 persen pencari kerja mengaku pernah di-ghosting oleh perekrut dan tidak mendapat respons...</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author Section -->
+    <div class="flex flex-col w-full gap-4 p-4 mb-10 lg:p-10 lg:px-14 lg:w-2/3">
+      <p class="mb-2 text-xl font-semibold lg:text-2xl">Author</p>
+      <a href="author.html">
+        <div class="flex flex-col items-center gap-4 p-6 transition border lg:flex-row border-slate-300 rounded-xl lg:p-8 hover:border-primary">
+          <img src="/src/img/profile.png" alt="profile" class="w-24 border-2 rounded-full lg:w-28 border-primary" />
+          <div class="text-center lg:text-left">
+            <p class="text-lg font-bold lg:text-xl">Queen Fayola S</p>
+            <p class="text-sm leading-relaxed lg:text-base">
+              Queen Fayola S, an expert content writer at Moco, continually acquires valuable knowledge in web technology, UI/UX design, CEO, and business. This knowledge is shared freely with the extensive community in Indonesia.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menu-toggle");
+        const dropdownMenu = document.getElementById("dropdown-menu");
+
+        // Event untuk toggle dropdown menu (buka/close)
+        menuToggle.addEventListener("click", () => {
+          dropdownMenu.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
